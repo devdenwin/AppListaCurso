@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     Pessoa pessoa;
     Pessoa outraPessoa;
 
+    String dadosPessoa;
+    String dadosOutraPessoa;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Criado/instaciado o objeto Pessoa.
         pessoa = new Pessoa();
+        outraPessoa = new Pessoa();
 
         /*
         Atribuir contéudo, dados valores para o Objeto
@@ -38,9 +42,24 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setCursoDesejado("Sociologia");
         outraPessoa.setTelefoneContato("11-919102011");
 
+        dadosPessoa = "Primeiro nome: ";
+        dadosPessoa += pessoa.getPrimeiroNome();
+        dadosPessoa += " | Sobrenome: ";
+        dadosPessoa += pessoa.getSobreNome();
+        dadosPessoa += " | Curso Desejado: ";
+        dadosPessoa += pessoa.getCursoDesejado();
+        dadosPessoa += " | Telefone de Contato: ";
+        dadosPessoa += pessoa.getTelefoneContato();
 
+        dadosOutraPessoa = "Primeiro nome: ";
+        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
+        dadosOutraPessoa += " | Sobrenome: ";
+        dadosOutraPessoa += outraPessoa.getSobreNome();
+        dadosOutraPessoa += " | Curso Desejado: ";
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
+        dadosOutraPessoa += " | Telefone de Contato: ";
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();
 
     }
-
 
 }

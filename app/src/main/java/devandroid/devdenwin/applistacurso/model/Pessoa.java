@@ -11,7 +11,7 @@ public class Pessoa {
     private String cursoDesejado;
     private String telefoneContato;
 
-    public Pessoa(){
+    public Pessoa() {
 
     }
     //Criar método de acesso aos privates do atributos na Main Activity > Botão direito > Genarate > Getter and Setter
